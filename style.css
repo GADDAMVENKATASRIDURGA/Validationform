@@ -1,0 +1,75 @@
+body {
+  background: linear-gradient(to bottom left, #e1b382, #c89666,#2d545e,#30a5bc);
+  font-family: 'Poppins', sans-serif;
+}
+@keyframes animate{
+  0%{
+    background-color: #c89666;
+  }
+  35%{
+    background-color:#765b42
+  }
+  60%{
+    background-color:#d49962
+  }
+  85%{
+    background-color:#2d545e
+  }
+  100%{
+    background-color:#30a5bc
+  }
+}
+#form {
+  width: 300px;
+  margin: 20vh auto 0 auto;
+  padding: 20px;
+  font-size: 12px;
+  animation:animate linear infinite 8s;
+}
+
+#form h1 {
+  color: #0f2027;
+  text-align: center;
+}
+
+#form button {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  color: white;
+  background-color: rgb(41, 57, 194);
+  border: none;
+  border-radius: 4px;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-size: 12px;
+  padding: 10px;
+  width: 100%;
+}
+
+.input-control input:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border-color: #09c372;
+}
+
+.input-control.error input {
+  border-color: #ff3860;
+}
+
+.input-control .error {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
+}
